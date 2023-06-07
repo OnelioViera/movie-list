@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move App</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/movie-app/styles.css">
+    <!--Font-Awsesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Project starts here!-->
+
+    <div class="head-title">
+
+        <h1>My Favorite Movies</h1>
+    </div>
+    <div class="container">
+
+        <div class="card form-inline justify-content-center">
+            <img class="" src="/movie-app/pngwing.com.png" alt="">
+            <form class="form-inline justify-content-center" id="new-movie-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" required id="title" class="form-control mx-sm-3">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating </label>
+                    <input type="number" required min="0" max="10" id="rating" class="form-control mx-sm-3">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-dark form-control mx-sm-3">Submit</button>
+                </div>
+            </form>
+            <br>
+            <table class="table table-striped table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Title <i id="titles" class="fas fa-sort-down"></i></th>
+
+                        <th scope="col">Rating <i id="ratings" class="fas fa-sort-down"></i></th>
+                        <th scope="col">Delete </th>
+                    </tr>
+                </thead>
+                <tbody id="movie-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--Project ends here!-->
+    <!--Jquery Script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--Custom Script-->
+    <script src="/movie-app/script.js"></script>
+</body>
+
+</html>

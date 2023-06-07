@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(80, 80, 80);
+}
+
+.head-title h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.movie-img {
+    text-align: center;
+}
+
+.card {
+    min-height: 100;
+}
+
+.form-group {
+    margin-top: 20px;
+}
